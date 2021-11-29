@@ -1,2 +1,15 @@
-package PACKAGE_NAME;public class Rectangle {
+public class Rectangle {
+    private final int length;
+    private final int breadth;
+
+    public Rectangle(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
+
+    }
+
+    public int findArea() {
+
+        return length * breadth;
+    }
 }
