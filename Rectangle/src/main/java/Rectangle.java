@@ -8,7 +8,7 @@ public class Rectangle {
 
     }
 
-    public int findArea() {
+    public int area() {
 
         return length * breadth;
     }
