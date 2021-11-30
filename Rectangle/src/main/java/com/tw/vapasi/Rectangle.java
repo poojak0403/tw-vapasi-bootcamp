@@ -1,5 +1,5 @@
 package com.tw.vapasi;
-public class Rectangle {
+public class Rectangle implements Shape{
     private final int length;
     private final int breadth;
 
@@ -10,13 +10,10 @@ public class Rectangle {
     }
 
     public int area() {
-
         return length * breadth;
     }
 
     public int perimeter() {
-
         return 2 * (length + breadth);
-
     }
 }
