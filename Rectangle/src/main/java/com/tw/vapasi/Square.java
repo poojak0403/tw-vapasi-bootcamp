@@ -1,17 +1,8 @@
 package com.tw.vapasi;
 
-public class Square implements Shape{
-    private final int side;
+public class Square extends Rectangle {
 
     public Square(int side) {
-        this.side = side;
-    }
-
-    public int area() {
-        return side * side;
-    }
-
-    public int perimeter() {
-        return 4 * side;
+        super(side, side);
     }
 }
