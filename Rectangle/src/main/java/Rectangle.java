@@ -12,4 +12,10 @@ public class Rectangle {
 
         return length * breadth;
     }
+
+    public int perimeter() {
+
+        return 2 * (length + breadth);
+
+    }
 }

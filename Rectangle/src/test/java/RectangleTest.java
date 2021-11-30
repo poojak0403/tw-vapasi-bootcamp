@@ -2,7 +2,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
 public class RectangleTest {
     @Test
     void shouldReturnAreaOfRectangleTwentyForLengthFiveAndBreadthFour() {
@@ -23,4 +22,26 @@ public class RectangleTest {
 
         assertEquals(200, area);
     }
+
+    @Test
+    void shouldReturnPerimeterOfRectangleEighteenForLengthFiveAndBreadthFour() {
+
+        Rectangle rectangle = new Rectangle(5, 4);
+
+        int perimeter = rectangle.perimeter();
+
+        assertEquals(18, perimeter);
+    }
+
+    @Test
+    void shouldReturnPerimeterOfRectangleSixtyForLengthTwentyAndBreadthTen() {
+
+        Rectangle rectangle = new Rectangle(20, 10);
+
+        int perimeter = rectangle.perimeter();
+
+        assertEquals(60, perimeter);
+    }
+
+
 }
